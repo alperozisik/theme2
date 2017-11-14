@@ -1,0 +1,48 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "2054-97ac-5d47-582f",
+			"initialized": true,
+			"userProps": {},
+			"className": ".page",
+			"version": "6.5.3-rc.8",
+			"props": {
+				"name": "newPage001",
+				"children": [
+					"b9fd-be8d-7569-c692",
+					"e0ab-7175-cbac-1f04"
+				],
+				"parent": null,
+				"orientation": "PORTRAIT"
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "b9fd-be8d-7569-c692",
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"name": "statusBar",
+				"children": [],
+				"parent": "2054-97ac-5d47-582f",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "e0ab-7175-cbac-1f04",
+			"userProps": {
+				"visible": false
+			},
+			"className": "",
+			"props": {
+				"name": "headerBar",
+				"title": "newPage001",
+				"children": [],
+				"parent": "2054-97ac-5d47-582f",
+				"isRemovable": false
+			}
+		}
+	]
+}

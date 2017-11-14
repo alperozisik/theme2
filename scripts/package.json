@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "sf-core": "2.0.4-beta.2",
+        "js-base": "1.0.4",
+        "@smartface/styler": "^1.0.0"
+    }
+}

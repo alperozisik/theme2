@@ -1,0 +1,163 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "bf29-0b04-0d88-02f2",
+			"initialized": true,
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"className": ".page",
+			"version": "6.5.3-rc.8",
+			"props": {
+				"name": "pgLogin",
+				"children": [
+					"83cb-83ed-77a8-faa0",
+					"ff55-dc23-df31-0013",
+					"70dc-f652-0d15-7b58"
+				],
+				"parent": null,
+				"orientation": "AUTO"
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "83cb-83ed-77a8-faa0",
+			"userProps": {},
+			"className": ".statusBar",
+			"props": {
+				"name": "statusBar",
+				"children": [],
+				"parent": "bf29-0b04-0d88-02f2",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "ff55-dc23-df31-0013",
+			"userProps": {
+				"visible": false
+			},
+			"className": ".headerBar",
+			"props": {
+				"name": "headerBar",
+				"title": null,
+				"children": [],
+				"parent": "bf29-0b04-0d88-02f2",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "ScrollView",
+			"id": "70dc-f652-0d15-7b58",
+			"userProps": {},
+			"className": ".scrollView .noHeaderbarMainLayout",
+			"props": {
+				"name": "svMain",
+				"children": [
+					"ce0e-0ea5-a8e6-4827",
+					"9ceb-e347-ed28-ef57"
+				],
+				"parent": "bf29-0b04-0d88-02f2"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "ce0e-0ea5-a8e6-4827",
+			"userProps": {},
+			"className": ".flexLayout .loginItems",
+			"props": {
+				"name": "flInfo",
+				"children": [
+					"5edd-92a0-8340-2be1"
+				],
+				"parent": "70dc-f652-0d15-7b58"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "9ceb-e347-ed28-ef57",
+			"userProps": {},
+			"className": ".flexLayout .loginItems",
+			"props": {
+				"name": "flexLayout2",
+				"children": [],
+				"parent": "70dc-f652-0d15-7b58"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "5edd-92a0-8340-2be1",
+			"userProps": {
+				"maxWidth": 264.5
+			},
+			"className": ".flexLayout .loginItemLayout",
+			"props": {
+				"name": "flInfoLayout",
+				"children": [
+					"0be7-9a03-9da9-c203",
+					"a2c2-34ac-c87d-76a4",
+					"0085-3a71-ee68-ebe2"
+				],
+				"parent": "ce0e-0ea5-a8e6-4827"
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "0be7-9a03-9da9-c203",
+			"userProps": {
+				"width": 66,
+				"height": 67,
+				"flexProps": {
+					"alignSelf": "CENTER"
+				}
+			},
+			"className": ".imageView .loginLogo",
+			"props": {
+				"name": "imgLogo",
+				"children": [],
+				"parent": "5edd-92a0-8340-2be1"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "a2c2-34ac-c87d-76a4",
+			"userProps": {
+				"width": null,
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 60, 67, 80, 1 )",
+				"text": "Field Services",
+				"font": {
+					"size": 22.5
+				}
+			},
+			"className": ".label",
+			"props": {
+				"name": "label1",
+				"text": "Field Services",
+				"children": [],
+				"parent": "5edd-92a0-8340-2be1"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "0085-3a71-ee68-ebe2",
+			"userProps": {
+				"width": null,
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+				"multiline": true,
+				"textColor": "rgba( 105, 109, 111, 1 )",
+				"font": {
+					"size": 15
+				}
+			},
+			"className": ".label",
+			"props": {
+				"name": "label2",
+				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+				"children": [],
+				"parent": "5edd-92a0-8340-2be1"
+			}
+		}
+	]
+}

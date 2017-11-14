@@ -1,0 +1,59 @@
+{
+	".page": {
+		"paddingLeft": 10,
+		"backgroundColor": "rgba( 255, 255, 255, 1 )"
+	},
+	".alper": {
+		"backgroundColor": "rgba( 126, 211, 33, 1 )",
+		"+Device:Device.os === \"android\"": {}
+	},
+	".flexLayout": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"+Device:Device.screen.width > 400": {
+			"flexProps.positionType": null
+		}
+	},
+	".scrollView": {
+		"height": null,
+		"width": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	".loginItems": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1,
+			"flexDirection": "ROW",
+			"justifyContent": null,
+			"alignContent": null
+		},
+		"paddingLeft": 15,
+		"paddingRight": 15
+	},
+	".loginItemLayout": {
+		"width": null,
+		"height": null,
+		"maxWidth": 345,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	".noHeaderbarMainLayout": {
+		"marginTop": 0,
+		"+Device:Device.os === \"iOS\"": {
+			"marginTop": 20
+		}
+	},
+	".loginLogo": {
+		"image": "logo.png"
+	},
+	".label": {
+		"font": {
+			"family": "Lato"
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	}
+}
