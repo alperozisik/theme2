@@ -1,7 +1,10 @@
 {
-    "dependencies": {
-        "sf-core": "2.0.4-beta.2",
-        "js-base": "1.0.4",
-        "@smartface/styler": "^1.0.0"
-    }
+  "dependencies": {
+    "@smartface/contx": "^1.0.0-rc.5",
+    "@smartface/styler": "^1.0.0",
+    "js-base": "1.0.4",
+    "sf-core": "2.0.4-beta.2",
+    "sf-extension-shopify": "0.0.2",
+    "sf-extension-utils": "^3.2.1"
+  }
 }

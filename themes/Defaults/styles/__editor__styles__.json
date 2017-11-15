@@ -9,7 +9,7 @@
 	},
 	".flexLayout": {
 		"backgroundColor": "rgba( 255, 255, 255, 0 )",
-		"+Device:Device.screen.width > 400": {
+		"+Device:screen.width > 400": {
 			"flexProps.positionType": null
 		}
 	},
@@ -26,9 +26,7 @@
 		"height": null,
 		"flexProps": {
 			"flexGrow": 1,
-			"flexDirection": "ROW",
-			"justifyContent": null,
-			"alignContent": null
+			"flexDirection": "ROW"
 		},
 		"paddingLeft": 15,
 		"paddingRight": 15
@@ -54,6 +52,50 @@
 		"font": {
 			"family": "Lato"
 		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	".fillTextBox": {
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"width": null,
+		"height": null
+	},
+	".textBox": {
+		"font": {
+			"family": "Lato"
+		}
+	},
+	".hLine": {
+		"flexProps": {
+			"positionType": null
+		},
+		"width": null,
+		"height": 0.5,
+		"backgroundColor": "rgba( 74, 74, 74, 1 )",
+		"left": 0,
+		"right": 0
+	},
+	".button": {
+		"backgroundColor": "rgba( 6, 190, 189, 1 )",
+		"textColor": "rgba( 255, 255, 255, 1 )",
+		"font": {
+			"family": "Lato",
+			"size": 18
+		}
+	},
+	".loginEntryItem": {
+		"marginBottom": 10
+	},
+	".loginSvMain": {
+		"flexProps": {
+			"flexDirection": "COLUMN"
+		},
+		"+page:Screen.width > 450": {
+			"flexProps.flexDirection": "ROW"
+		}
+	},
+	".activityIndicator": {
 		"backgroundColor": "rgba( 255, 255, 255, 0 )"
 	}
 }

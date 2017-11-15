@@ -20,8 +20,16 @@ const settings = require("./settings.json");
 stylerBuilder.registerThemes(settings.config.theme.themes || "Defaults");
 stylerBuilder.setActiveTheme(settings.config.theme.currentTheme);
 
+const Shopify = require("sf-extension-shopify");
+const Config = require("config.js");
+Shopify.Authentication.setAPIKey(Config.SHOPIFY_APIKey);
+Shopify.Authentication.setPassword(Config.SHOPIFY_PASSWORD);
+Shopify.Authentication.setStoreName(Config.SHOPIFY_STORENAME);
+
+
 // Define routes and go to initial page of application
 // Router.add("page1", require("./pages/page1"));
 // Router.add("page2", require("./pages/page2"));
 Router.add("pgLogin", require("./pages/pgLogin"));
+Router.add("pgList", require("./pages/pgList"));
 Router.go("pgLogin");

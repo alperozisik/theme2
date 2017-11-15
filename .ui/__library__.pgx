@@ -3,18 +3,23 @@
 		{
 			"type": "Page",
 			"id": "57f4-201f-4bfc-5fc6",
-			"userProps": {},
+			"initialized": true,
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 1 )"
+			},
+			"className": "",
+			"version": "6.5.3",
 			"props": {
 				"name": "__library__",
-				"parent": null,
 				"children": [
 					"23c1-aa21-38ff-148e",
-					"76f4-a7ec-36e9-a444"
+					"76f4-a7ec-36e9-a444",
+					"e240-d9d4-242c-ecbe",
+					"9c82-991a-9096-6bdf"
 				],
+				"parent": null,
 				"orientation": "PORTRAIT"
-			},
-			"version": "6.5.3",
-			"initialized": false
+			}
 		},
 		{
 			"type": "StatusBar",
@@ -22,9 +27,8 @@
 			"userProps": {},
 			"props": {
 				"name": "statusBar",
-				"parent": "57f4-201f-4bfc-5fc6",
 				"children": [],
-				"visible": true,
+				"parent": "57f4-201f-4bfc-5fc6",
 				"isRemovable": false
 			}
 		},
@@ -36,11 +40,268 @@
 			},
 			"props": {
 				"name": "headerBar",
-				"parent": "57f4-201f-4bfc-5fc6",
-				"children": [],
 				"title": "__library__",
-				"visible": true,
+				"children": [],
+				"parent": "57f4-201f-4bfc-5fc6",
 				"isRemovable": false
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e240-d9d4-242c-ecbe",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": 102,
+				"height": 104,
+				"id": 1005,
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"id": 1005,
+				"name": "loaderContainer",
+				"children": [
+					"83aa-8a9f-951b-8a21"
+				],
+				"parent": "57f4-201f-4bfc-5fc6"
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "83aa-8a9f-951b-8a21",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"id": 1006
+			},
+			"className": ".activityIndicator",
+			"props": {
+				"id": 1006,
+				"name": "aiLoad",
+				"children": [],
+				"parent": "e240-d9d4-242c-ecbe"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "9c82-991a-9096-6bdf",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"flexProps": {},
+				"left": 74.60317460317461,
+				"top": 153.96825396825398,
+				"width": 170,
+				"height": 230,
+				"backgroundColor": "rgba( 255, 255, 255, 1 )",
+				"id": 1100
+			},
+			"className": ".flexLayout",
+			"props": {
+				"id": 1100,
+				"name": "itemProductList",
+				"children": [
+					"aa60-724c-4720-246e",
+					"fd62-c5f8-4d84-772d",
+					"8a1b-42ca-0e9f-e1d6"
+				],
+				"parent": "57f4-201f-4bfc-5fc6"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "8a1b-42ca-0e9f-e1d6",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"width": null,
+				"height": 60,
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"id": 1101,
+				"flexProps": {
+					"alignItems": "AUTO",
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"id": 1101,
+				"name": "infoContainer",
+				"children": [
+					"5e9b-3440-11d6-cc2f",
+					"44a0-ca40-ee7a-9575"
+				],
+				"parent": "9c82-991a-9096-6bdf"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "fd62-c5f8-4d84-772d",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"height": 1,
+				"width": null,
+				"alpha": 0.1,
+				"backgroundColor": "rgba( 0, 0, 0, 1 )",
+				"id": 1104
+			},
+			"className": ".flexLayout",
+			"props": {
+				"id": 1104,
+				"name": "dvd",
+				"children": [],
+				"parent": "9c82-991a-9096-6bdf"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "aa60-724c-4720-246e",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": 173,
+				"id": 1105
+			},
+			"className": ".flexLayout",
+			"props": {
+				"id": 1105,
+				"name": "thmbContainer",
+				"usePageVariable": true,
+				"children": [
+					"42e4-4f38-6ef9-56fb",
+					"977a-7ed5-4c93-4def"
+				],
+				"parent": "9c82-991a-9096-6bdf"
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "977a-7ed5-4c93-4def",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": null,
+				"id": 1106,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".imageView",
+			"props": {
+				"id": 1106,
+				"name": "thumb",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "aa60-724c-4720-246e"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "42e4-4f38-6ef9-56fb",
+			"hiddenComponent": false,
+			"source": {
+				"page": "__library__",
+				"type": "loaderContainer",
+				"id": "e240-d9d4-242c-ecbe"
+			},
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": null,
+				"height": null,
+				"id": 1107,
+				"right": 0,
+				"bottom": 0,
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "CENTER",
+					"positionType": "ABSOLUTE"
+				},
+				"flex": {
+					"justifyContent": 1,
+					"alignItems": 2,
+					"positionType": 0
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"id": 1107,
+				"name": "loaderContainer",
+				"children": [],
+				"parent": "aa60-724c-4720-246e"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "44a0-ca40-ee7a-9575",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"text": "5$",
+				"width": null,
+				"height": 20,
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"id": 1102,
+				"font": {
+					"size": 14
+				}
+			},
+			"className": ".label",
+			"props": {
+				"id": 1102,
+				"name": "price",
+				"text": "5$",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "8a1b-42ca-0e9f-e1d6"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "5e9b-3440-11d6-cc2f",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"text": "Product",
+				"width": null,
+				"height": 20,
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"id": 1103,
+				"font": {
+					"size": 14
+				}
+			},
+			"className": ".label",
+			"props": {
+				"id": 1103,
+				"name": "title",
+				"text": "Product",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "8a1b-42ca-0e9f-e1d6"
 			}
 		}
 	]

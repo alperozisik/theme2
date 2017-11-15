@@ -51,7 +51,7 @@
 			"type": "ScrollView",
 			"id": "70dc-f652-0d15-7b58",
 			"userProps": {},
-			"className": ".scrollView .noHeaderbarMainLayout",
+			"className": ".scrollView .noHeaderbarMainLayout .loginSvMain",
 			"props": {
 				"name": "svMain",
 				"children": [
@@ -64,10 +64,16 @@
 		{
 			"type": "FlexLayout",
 			"id": "ce0e-0ea5-a8e6-4827",
-			"userProps": {},
+			"userProps": {
+				"usePageVariable": true,
+				"flexProps": {
+					"justifyContent": "CENTER"
+				}
+			},
 			"className": ".flexLayout .loginItems",
 			"props": {
 				"name": "flInfo",
+				"usePageVariable": true,
 				"children": [
 					"5edd-92a0-8340-2be1"
 				],
@@ -77,11 +83,17 @@
 		{
 			"type": "FlexLayout",
 			"id": "9ceb-e347-ed28-ef57",
-			"userProps": {},
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER"
+				}
+			},
 			"className": ".flexLayout .loginItems",
 			"props": {
-				"name": "flexLayout2",
-				"children": [],
+				"name": "flLogin",
+				"children": [
+					"46bb-16ec-843f-4e5d"
+				],
 				"parent": "70dc-f652-0d15-7b58"
 			}
 		},
@@ -89,7 +101,10 @@
 			"type": "FlexLayout",
 			"id": "5edd-92a0-8340-2be1",
 			"userProps": {
-				"maxWidth": 264.5
+				"maxWidth": 264.5,
+				"flexProps": {
+					"justifyContent": "CENTER"
+				}
 			},
 			"className": ".flexLayout .loginItemLayout",
 			"props": {
@@ -157,6 +172,162 @@
 				"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
 				"children": [],
 				"parent": "5edd-92a0-8340-2be1"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "46bb-16ec-843f-4e5d",
+			"userProps": {
+				"maxWidth": 256,
+				"flexProps": {
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout .loginItemLayout",
+			"props": {
+				"name": "flLoginLayout",
+				"children": [
+					"a5c7-bf1c-4d67-cd43",
+					"0b74-3eee-9faf-eb54",
+					"3e11-f012-b7a0-019d"
+				],
+				"parent": "9ceb-e347-ed28-ef57"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "a5c7-bf1c-4d67-cd43",
+			"userProps": {
+				"flexProps": {},
+				"width": null,
+				"height": 50
+			},
+			"className": ".flexLayout .loginEntryItem",
+			"props": {
+				"name": "flUserName",
+				"children": [
+					"551b-2871-c079-c3bc",
+					"1303-a7d7-3bda-9d86"
+				],
+				"parent": "46bb-16ec-843f-4e5d"
+			}
+		},
+		{
+			"type": "TextBox",
+			"id": "551b-2871-c079-c3bc",
+			"userProps": {
+				"textColor": "rgba( 105, 109, 111, 1 )",
+				"hint": "User name",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			},
+			"className": ".textBox .fillTextBox",
+			"props": {
+				"name": "tbUserName",
+				"hint": "User name",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "a5c7-bf1c-4d67-cd43"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "1303-a7d7-3bda-9d86",
+			"userProps": {
+				"bottom": 0
+			},
+			"className": ".flexLayout .hLine",
+			"props": {
+				"name": "flHLine",
+				"children": [],
+				"parent": "a5c7-bf1c-4d67-cd43"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "0b74-3eee-9faf-eb54",
+			"userProps": {
+				"flexProps": {},
+				"width": null,
+				"height": 50
+			},
+			"className": ".flexLayout .loginEntryItem",
+			"props": {
+				"name": "flPassword",
+				"children": [
+					"e750-4c86-c77d-63b1",
+					"f3c4-28a6-435c-dbaa"
+				],
+				"parent": "46bb-16ec-843f-4e5d"
+			}
+		},
+		{
+			"type": "TextBox",
+			"id": "e750-4c86-c77d-63b1",
+			"userProps": {
+				"textColor": "rgba( 105, 109, 111, 1 )",
+				"hint": "Password",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			},
+			"className": ".textBox .fillTextBox",
+			"props": {
+				"name": "tbPassword",
+				"hint": "Password",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "0b74-3eee-9faf-eb54"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "f3c4-28a6-435c-dbaa",
+			"userProps": {
+				"bottom": 0
+			},
+			"className": ".flexLayout .hLine",
+			"props": {
+				"name": "flHLine",
+				"children": [],
+				"parent": "0b74-3eee-9faf-eb54"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "3e11-f012-b7a0-019d",
+			"userProps": {
+				"width": null,
+				"height": 65
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flLoginButton",
+				"children": [
+					"4962-d8b1-752a-a354"
+				],
+				"parent": "46bb-16ec-843f-4e5d"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "4962-d8b1-752a-a354",
+			"userProps": {
+				"text": "Login",
+				"usePageVariable": true,
+				"borderRadius": 32.5,
+				"height": null,
+				"width": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
+			},
+			"className": ".button",
+			"props": {
+				"name": "btnLogin",
+				"text": "Login",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "3e11-f012-b7a0-019d"
 			}
 		}
 	]

@@ -1,8 +1,7 @@
-/* 
-		You can modify its contents.
-*/
+const FlexLayout = require('sf-core/ui/flexlayout');
 const extend = require('js-base/core/extend');
 const PgLoginDesign = require('ui/ui_pgLogin');
+const Router = require("sf-core/ui/router");
 
 const PgLogin = extend(PgLoginDesign)(
   // Constructor
@@ -12,7 +11,8 @@ const PgLogin = extend(PgLoginDesign)(
     this.onShow = onShow.bind(this, this.onShow.bind(this));
     // overrides super.onLoad method
     this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-
+    this.children.svMain.layout.flexGrow = 1;
+    // this.flInfo.flexDirection = FlexLayout.FlexDirection.ROW;
   });
 
 /**
@@ -32,6 +32,10 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
   superOnLoad();
+  const page = this;
+  page.btnLogin.onPress = function() {
+    Router.go("pgList");
+  };
 }
 
 module && (module.exports = PgLogin);

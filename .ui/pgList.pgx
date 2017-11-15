@@ -1,0 +1,88 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "a85b-41f7-dba4-cf33",
+			"initialized": true,
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"className": "",
+			"version": "6.5.3-rc.8",
+			"props": {
+				"name": "pgList",
+				"children": [
+					"690b-2d34-df1e-6fac",
+					"3f8e-341e-5926-7f24",
+					"8d52-e256-0085-82de"
+				],
+				"parent": null,
+				"orientation": "AUTO"
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "690b-2d34-df1e-6fac",
+			"userProps": {},
+			"props": {
+				"name": "statusBar",
+				"children": [],
+				"parent": "a85b-41f7-dba4-cf33",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "3f8e-341e-5926-7f24",
+			"userProps": {
+				"title": "List"
+			},
+			"className": "",
+			"props": {
+				"name": "headerBar",
+				"title": "List",
+				"children": [],
+				"parent": "a85b-41f7-dba4-cf33",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "8d52-e256-0085-82de",
+			"userProps": {
+				"usePageVariable": true,
+				"width": null,
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"bottom": 0,
+				"right": 0,
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"alignItems": "CENTER",
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flWait",
+				"usePageVariable": true,
+				"children": [
+					"3c1e-90b9-3449-fdf1"
+				],
+				"parent": "a85b-41f7-dba4-cf33"
+			}
+		},
+		{
+			"type": "ActivityIndicator",
+			"id": "3c1e-90b9-3449-fdf1",
+			"userProps": {},
+			"className": ".activityIndicator",
+			"props": {
+				"name": "aiWait",
+				"children": [],
+				"parent": "8d52-e256-0085-82de"
+			}
+		}
+	]
+}
