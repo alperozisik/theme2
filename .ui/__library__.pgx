@@ -25,6 +25,7 @@
 			"type": "StatusBar",
 			"id": "23c1-aa21-38ff-148e",
 			"userProps": {},
+			"className": "",
 			"props": {
 				"name": "statusBar",
 				"children": [],
@@ -38,6 +39,7 @@
 			"userProps": {
 				"title": "__library__"
 			},
+			"className": "",
 			"props": {
 				"name": "headerBar",
 				"title": "__library__",
@@ -98,8 +100,8 @@
 			},
 			"userProps": {
 				"flexProps": {},
-				"left": 74.60317460317461,
-				"top": 153.96825396825398,
+				"left": 48.741097285829746,
+				"top": 79.83032752727641,
 				"width": 170,
 				"height": 230,
 				"backgroundColor": "rgba( 255, 255, 255, 1 )",

@@ -25,7 +25,7 @@ const PgList = extend(PgListDesign)(
         this.onOrientationChange = onOrientationChange.bind(this);
         const page = this;
 
-        page.dataset = null;
+        page.dataset = [];
 
     });
 
@@ -79,7 +79,7 @@ function fetchData() {
 
 function redesignListviewItem() {
     const page = this;
-    this.layout.removeChild(this.lvMain);
+    this.lvMain && this.layout.removeChild(this.lvMain);
     this.lvMain = new ListView({
         positionType: FlexLayout.PositionType.RELATIVE,
         flexGrow: 1,

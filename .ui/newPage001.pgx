@@ -11,7 +11,9 @@
 				"name": "newPage001",
 				"children": [
 					"b9fd-be8d-7569-c692",
-					"e0ab-7175-cbac-1f04"
+					"e0ab-7175-cbac-1f04",
+					"2def-e11c-0ef2-7b56",
+					"39fd-7140-b2d4-583e"
 				],
 				"parent": null,
 				"orientation": "PORTRAIT"
@@ -42,6 +44,28 @@
 				"children": [],
 				"parent": "2054-97ac-5d47-582f",
 				"isRemovable": false
+			}
+		},
+		{
+			"type": "Button",
+			"id": "2def-e11c-0ef2-7b56",
+			"userProps": {},
+			"className": ".button",
+			"props": {
+				"name": "button1",
+				"children": [],
+				"parent": "2054-97ac-5d47-582f"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "39fd-7140-b2d4-583e",
+			"userProps": {},
+			"className": ".button",
+			"props": {
+				"name": "button2",
+				"children": [],
+				"parent": "2054-97ac-5d47-582f"
 			}
 		}
 	]

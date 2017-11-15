@@ -8,10 +8,7 @@
 		"+Device:Device.os === \"android\"": {}
 	},
 	".flexLayout": {
-		"backgroundColor": "rgba( 255, 255, 255, 0 )",
-		"+Device:screen.width > 400": {
-			"flexProps.positionType": null
-		}
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
 	},
 	".scrollView": {
 		"height": null,
@@ -26,9 +23,7 @@
 		"height": null,
 		"flexProps": {
 			"flexGrow": 1,
-			"flexDirection": "ROW",
-			"justifyContent": null,
-			"alignContent": null
+			"flexDirection": "ROW"
 		},
 		"paddingLeft": 15,
 		"paddingRight": 15
@@ -70,7 +65,7 @@
 	},
 	".hLine": {
 		"flexProps": {
-			"positionType": null
+			"positionType": "ABSOLUTE"
 		},
 		"width": null,
 		"height": 0.5,
